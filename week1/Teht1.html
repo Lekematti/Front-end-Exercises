@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Positioning Items</title>
+	<meta charset="UTF-8">
+	<style>  
+
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            position: relative;
+            margin: 0;
+        }
+    
+        .box {
+            height: 100%;
+            width: 50%;
+            border: 1px solid black;
+            color: aliceblue;
+            padding: 10px;
+            float: left;
+        }
+        
+        header{
+            height: 100vh;
+            background-color: aquamarine;
+        }
+        
+        #one { background-color: white;}
+        #two { background-color: gray;}
+        
+
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        h1{
+            width: 200px;
+            height: 50px;
+            margin: auto;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        main{
+            margin: 30px 50px;
+        }
+
+        .card{
+            background-color: paleturquoise;
+            width: 400px;
+            height: 500px;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .card2{
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        .card-img{
+            width: 100%;
+            box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+        }
+        
+        .list{
+            width: 40%;
+            margin: auto;
+            
+        }
+        li{
+            padding-bottom: 20px;
+            padding-top: 10PX;
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        #input{
+            background-color: black;
+            color: aliceblue;
+            width: 200px;
+            height: 50px;
+
+            text-align: center;
+        }
+
+        .button{
+            background-color: black;
+            color: aliceblue;
+            height: 50px;
+            width: 200px;
+            border-radius: 50px;
+        }
+
+        #more{
+            position: absolute;
+            bottom: 20%;
+            width: 200px;
+            height: 100px;
+            border: 3px solid #73AD21;
+            text-align: center;
+            padding: 40px;
+            right: 46%;
+        }
+
+    </style>
+    </head>
+
+<body>
+    <header class="clearfix">
+        <section class="box" id="one">
+            <div class="card">
+                <img class="card-img" src="../week1/img/MEME 109.jpg" alt="hieno kuva">
+                <p id="emoji">&#128578</p>
+            </div>
+        </section>
+
+        <section class="box" id="two">
+            <div class="card2">
+            <h1>Heading 1</h1>
+            <ol class="list" type="1">
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Esse quia ut labore, nesciunt iure deleniti alias rerum amet natus, dolore consectetur repudiandae veniam sequi exercitationem voluptate? 
+                    Error voluptatem reiciendis officiis.
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Velit praesentium enim molestiae tempore laboriosam reiciendis unde fugit voluptas eligendi, 
+                    maiores molestias cumque adipisci provident beatae alias accusantium maxime! Sunt, iure.
+                </li>
+
+                <li>
+                    <form>
+                        <input type="text" id="input" name="input" value="Input field">
+                      </form>
+                </li>
+
+                <li>
+                    <button class="button" type="button">Click Me!</button>
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                    Officia fuga eligendi distinctio sunt amet accusantium aperiam aliquid dolores, 
+                    corporis nostrum quibusdam totam reprehenderit perferendis enim vitae veniam fugit eaque tempora?
+                </li>
+            </ol>
+        </div>
+        </section>
+        <div id="more">
+            See more
+        </div>
+    </header>
+
+    <main>
+        <h2>Heading 2</h2>
+        <div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni necessitatibus nemo itaque veniam distinctio repudiandae earum aliquid animi velit odit doloribus quaerat, iste eligendi consequatur molestias voluptatem facilis eum voluptatum?
+                Nisi amet voluptates consectetur cupiditate? Exercitationem laudantium atque minima beatae eius placeat ducimus ex ab, ut, ipsum quo voluptates incidunt fugit molestias sit consectetur libero! Sequi nemo consequatur neque ipsam.
+                Porro nam et fugiat, quam possimus totam vel molestias optio? Odit distinctio similique, debitis vitae in corporis suscipit molestiae perferendis quas, ex quam voluptates maxime sed, quibusdam tenetur temporibus architecto.
+                Iure blanditiis fugit quas odit dolores commodi doloremque corporis ex ut perspiciatis, a error natus aut, accusantium excepturi sed neque tempora nostrum quis rerum dicta? Recusandae cupiditate doloribus rem ut.
+                Eos totam nobis, excepturi non delectus necessitatibus ipsam. Nesciunt veritatis numquam excepturi, expedita omnis sapiente consectetur quibusdam deserunt! Suscipit dolorem facere est! Suscipit itaque hic libero blanditiis error quae maxime?
+                Sint suscipit dolores excepturi repellat explicabo, nemo cumque eos vel! Exercitationem, doloribus tempora quas adipisci quis perspiciatis dolores placeat minima ullam soluta nemo alias harum rem quos ea quisquam molestias.
+                Adipisci magnam tenetur sed, ullam at in blanditiis. Accusantium ut amet molestias incidunt nesciunt sapiente error! Blanditiis ratione autem sed assumenda dolore exercitationem totam sapiente, fugit, cumque excepturi voluptas laudantium.
+                Nisi nobis dolores voluptas molestiae. Nesciunt incidunt ad, facere sapiente quos impedit inventore id qui iure vel cupiditate numquam iste provident culpa fuga, similique amet laudantium tempora veniam alias nobis.
+                Eum saepe, aut reprehenderit beatae harum dolor voluptates deleniti corrupti sint rerum cupiditate incidunt veniam, voluptatum possimus architecto voluptate, maiores labore similique. Magnam dolor molestias suscipit qui ipsam, fugiat consequuntur.
+                Harum veniam cum tempore dolores laboriosam debitis ipsam blanditiis atque iste nemo iure, ullam mollitia quod accusamus architecto. Rem aliquam voluptas officiis beatae doloribus iure provident doloremque, odio nobis eos.
+            </p>
+        </div>
+    </main>
+ 
+</body>
