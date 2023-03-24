@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    /*mobile*/
+    body {
+      background-color: green;
+    }
+    h1{
+      text-align: center;
+      color: black;
+      font-size: 40px;
+    }
+    h2{
+      text-align: center;
+      color: black;
+    }
+    .kuva{
+      width: 100%;
+      /*max-width: 1000px;*/
+      border-radius: 30px;
+    }
+    .tasuat{
+      display: block;
+      margin: auto;
+      border-radius: 30px;
+      width: 100%;
+      height: 200px;
+      background-color: blueviolet;
+      background-image: url("img/meme2.jpg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    .text{
+      text-align: center;
+    }
+    /*desktop*/
+    @media only screen and (min-width: 800px) {
+      body {
+        background-color: lawngreen;
+      }
+      h1{
+        color: black;
+      }
+      .text{
+        text-align: center;
+      }
+      .kuva{
+        width: 800px;
+        display: block;
+        margin: auto;
+        border-radius: 30px;
+      }
+      .tasuat{
+        background-image: url("img/meme3.jpeg");
+      }
+    }
+    @media only screen and (min-width: 1300px){
+      body{
+        background-color: aliceblue;
+      }
+      .kuva{
+        width: 100%;
+        height: 300px;
+        border-radius: 30px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+<div>
+  <h1>otsikko</h1>
+  <img class="kuva" src="img/meme3.jpeg">
+
+  <p class="text">
+    Resize the browser window.
+    When the width of this document is 600 pixels or less,
+    the background-color is "lightblue", otherwise it is "lightgreen".
+  </p>
+
+  <h2>object fit and media säännöt</h2>
+</div>
+<h2>taustakuva</h2>
+<div class="tasuat">
+
+</div>
+<p class="text">
+  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita non tempore voluptas voluptatum!
+    Consequuntur distinctio explicabo facere in iste maiores nulla quibusdam recusandae.
+    Esse fugiat non placeat, quam velit voluptatem?</span>
+  <span>Ab adipisci, animi eligendi eos exercitationem ipsum magni nesciunt qui similique sint!
+    Ab asperiores culpa dolores ex iste, magnam nesciunt nobis.
+    Beatae delectus error est natus odit saepe tempora temporibus?</span>
+  <span>Dolore eaque eos esse exercitationem fuga impedit, nobis porro soluta voluptatibus!
+    Adipisci blanditiis cupiditate doloribus ipsa molestias omnis recusandae saepe
+    similique veniam voluptatum. Dolores, ex quam. Enim quae sequi similique.</span>
+  <span>Amet aperiam delectus dignissimos eius expedita explicabo laboriosam natus nisi,
+    nostrum odio officia perspiciatis quasi qui repellendus soluta voluptate voluptatibus!
+    Architecto eligendi excepturi harum, magni pariatur placeat quam qui sunt?</span>
+  <span>Autem doloribus eius error hic impedit in odio praesentium!
+    Amet aspernatur atque blanditiis, debitis dicta explicabo iure iusto minus
+    mollitia natus odit quos repellendus sit soluta ut vitae voluptate! Consequatur.</span>
+  <span>Aliquam, aliquid autem doloribus eaque explicabo itaque iure labore modi nihil non
+    nulla odio officiis provident quas quia recusandae repudiandae sint ullam vero
+    voluptatem. Culpa doloribus nihil officiis rem repellat.</span>
+  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita non tempore voluptas voluptatum!
+    Consequuntur distinctio explicabo facere in iste maiores nulla quibusdam recusandae.
+    Esse fugiat non placeat, quam velit voluptatem?</span>
+  <span>Ab adipisci, animi eligendi eos exercitationem ipsum magni nesciunt qui similique sint!
+    Ab asperiores culpa dolores ex iste, magnam nesciunt nobis.
+    Beatae delectus error est natus odit saepe tempora temporibus?</span>
+  <span>Dolore eaque eos esse exercitationem fuga impedit, nobis porro soluta voluptatibus!
+    Adipisci blanditiis cupiditate doloribus ipsa molestias omnis recusandae saepe
+    similique veniam voluptatum. Dolores, ex quam. Enim quae sequi similique.</span>
+  <span>Amet aperiam delectus dignissimos eius expedita explicabo laboriosam natus nisi,
+    nostrum odio officia perspiciatis quasi qui repellendus soluta voluptate voluptatibus!
+    Architecto eligendi excepturi harum, magni pariatur placeat quam qui sunt?</span>
+  <span>Autem doloribus eius error hic impedit in odio praesentium!
+    Amet aspernatur atque blanditiis, debitis dicta explicabo iure iusto minus
+    mollitia natus odit quos repellendus sit soluta ut vitae voluptate! Consequatur.</span>
+  <span>Aliquam, aliquid autem doloribus eaque explicabo itaque iure labore modi nihil non
+    nulla odio officiis provident quas quia recusandae repudiandae sint ullam vero
+    voluptatem. Culpa doloribus nihil officiis rem repellat.</span>
+  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita non tempore voluptas voluptatum!
+    Consequuntur distinctio explicabo facere in iste maiores nulla quibusdam recusandae.
+    Esse fugiat non placeat, quam velit voluptatem?</span>
+  <span>Ab adipisci, animi eligendi eos exercitationem ipsum magni nesciunt qui similique sint!
+    Ab asperiores culpa dolores ex iste, magnam nesciunt nobis.
+    Beatae delectus error est natus odit saepe tempora temporibus?</span>
+  <span>Dolore eaque eos esse exercitationem fuga impedit, nobis porro soluta voluptatibus!
+    Adipisci blanditiis cupiditate doloribus ipsa molestias omnis recusandae saepe
+    similique veniam voluptatum. Dolores, ex quam. Enim quae sequi similique.</span>
+  <span>Amet aperiam delectus dignissimos eius expedita explicabo laboriosam natus nisi,
+    nostrum odio officia perspiciatis quasi qui repellendus soluta voluptate voluptatibus!
+    Architecto eligendi excepturi harum, magni pariatur placeat quam qui sunt?</span>
+  <span>Autem doloribus eius error hic impedit in odio praesentium!
+    Amet aspernatur atque blanditiis, debitis dicta explicabo iure iusto minus
+    mollitia natus odit quos repellendus sit soluta ut vitae voluptate! Consequatur.</span>
+  <span>Aliquam, aliquid autem doloribus eaque explicabo itaque iure labore modi nihil non
+    nulla odio officiis provident quas quia recusandae repudiandae sint ullam vero
+    voluptatem. Culpa doloribus nihil officiis rem repellat.</span>
+  <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Expedita non tempore voluptas voluptatum!
+    Consequuntur distinctio explicabo facere in iste maiores nulla quibusdam recusandae.
+    Esse fugiat non placeat, quam velit voluptatem?</span>
+  <span>Ab adipisci, animi eligendi eos exercitationem ipsum magni nesciunt qui similique sint!
+    Ab asperiores culpa dolores ex iste, magnam nesciunt nobis.
+    Beatae delectus error est natus odit saepe tempora temporibus?</span>
+  <span>Dolore eaque eos esse exercitationem fuga impedit, nobis porro soluta voluptatibus!
+    Adipisci blanditiis cupiditate doloribus ipsa molestias omnis recusandae saepe
+    similique veniam voluptatum. Dolores, ex quam. Enim quae sequi similique.</span>
+  <span>Amet aperiam delectus dignissimos eius expedita explicabo laboriosam natus nisi,
+    nostrum odio officia perspiciatis quasi qui repellendus soluta voluptate voluptatibus!
+    Architecto eligendi excepturi harum, magni pariatur placeat quam qui sunt?</span>
+  <span>Autem doloribus eius error hic impedit in odio praesentium!
+    Amet aspernatur atque blanditiis, debitis dicta explicabo iure iusto minus
+    mollitia natus odit quos repellendus sit soluta ut vitae voluptate! Consequatur.</span>
+  <span>Aliquam, aliquid autem doloribus eaque explicabo itaque iure labore modi nihil non
+    nulla odio officiis provident quas quia recusandae repudiandae sint ullam vero
+    voluptatem. Culpa doloribus nihil officiis rem repellat.</span>
+</p>
+</body>
+</html>
