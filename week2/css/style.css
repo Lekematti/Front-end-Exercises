@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.box {
+    height: 100%;
+    width: 50%;
+    border: 1px solid black;
+    color: aliceblue;
+    padding: 10px;
+    float: left;
+}
+
+header{
+    height: 100vh;
+    background-color: aquamarine;
+    position: relative;
+}
+
+#one { background-color: white;}
+#two { background-color: gray;}
+
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1{
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.bottomtext{
+    padding: 30px;
+    text-align: center;
+    background: gray;
+}
+
+main{
+    margin: 30px 50px;
+}
+
+.card{
+    background-color: paleturquoise;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card2{
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card-img{
+    width: 100%;
+    box-shadow: 0 4px 8px 0 black, 0 6px 20px 0 black;
+}
+
+.figtext{
+    color: black;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.list{
+    width: 70%;
+    margin: auto;
+}
+
+li{
+    padding-bottom: 20px;
+    padding-top: 10PX;
+    padding-left: 20px;
+    text-align: center;
+}
+
+#input{
+    background-color: black;
+    color: aliceblue;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+.button{
+    background-color: black;
+    color: aliceblue;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+}
+
+#more{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    width: 100px;
+    height: 70px;
+    border: 3px solid;
+    text-align: center;
+    background: lightblue;
+}
+#more:hover{
+    background: cadetblue;
+}
+@media only screen and (max-width: 800px) {
+    .box{
+        width: 100%;
+    }
+    body {
+        background-color: lawngreen;
+    }
+    .text{
+        text-align: center;
+    }
+    #more {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 100px;
+        height: 70px;
+        border: 3px solid;
+        text-align: center;
+        background: cadetblue;
+    }
+}
