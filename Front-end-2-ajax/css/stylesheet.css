@@ -1,0 +1,52 @@
+html{
+    padding: 10px;
+    background: black;
+}
+section{
+    text-align: center;
+}
+body{
+    max-width: 25%;
+    padding: 20px;
+    margin: auto;
+    font-size: medium;
+    line-height: normal;
+    text-align: center;
+}
+header{
+    background: darkolivegreen;
+    color: aliceblue;
+    margin-top: 20px;
+}
+h3{
+    margin-bottom: 50px;
+}
+#genre{
+    flex-wrap: wrap;
+    background: darkolivegreen;
+    color: aliceblue;
+    text-align: center;
+}
+#sum{
+    flex-wrap: wrap;
+    background: darkolivegreen;
+    color: aliceblue;
+    text-align: center;
+}
+p{
+    flex-wrap: wrap;
+    background: darkolivegreen;
+    color: aliceblue;
+    text-align: center;
+}
+figure{
+    text-align: center;
+}
+a{
+    color: darkolivegreen;
+    color: aliceblue;
+}
+.separator{
+    background: black;
+    color: darkolivegreen;
+}
