@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8">
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background-image: url("../img/meme3.jpeg");
+        }
+
+        .clear { clear: both;}
+
+        /* img */
+        img {
+        }
+
+        /* container */
+        .main {
+            position: relative;
+            display: flex;
+            background-color: darkolivegreen;
+            height: 100vh;
+        }
+
+        .box {
+            border: 1px solid black;
+        }
+
+        #left {
+
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: self-start;
+            padding-top: 20px;
+        }
+        #right {
+            background-color: gray;
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            padding-left: 15px;
+        }
+
+        .upper{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 50%;
+            background-position: center;
+            background-image: url("../img/MEME109.jpg");
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 26% 52%);
+
+        }
+        .lower{
+            flex: 1;
+        }
+
+        nav{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            padding: 10px;
+        }
+        footer{
+            padding: 30px;
+        }
+        .wrapper{
+            background-color: darkolivegreen;
+            width: 900px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        h2{
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+<div class="wrapper">
+    <header>
+        <nav>
+            navi palkki
+            <button>Login</button>
+        </nav>
+    </header>
+
+    <div class="main">
+        <div class="box" id="left">
+            <div>
+                <h2>Recent posts</h2>
+                <ul>
+                    <li>
+                        tekstiä
+                    </li>
+                    <li>
+                        tekstiä
+                    </li>
+                    <li>
+                        tekstiä
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="box" id="right">
+            <div class="upper">
+
+            </div>
+            <div class="lower">
+                <h3>cool image</h3>
+                <p>
+                    <span>Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit.
+                    Adipisci animi aperiam dicta doloribus eum
+                    excepturi, fugit ipsa magnam magni minima
+                    molestiae non obcaecati odio, officiis
+                    perferendis quia quibusdam quo voluptas?
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Täällä sivun pohja
+    </footer>
+</div>
+</body>
+</html>

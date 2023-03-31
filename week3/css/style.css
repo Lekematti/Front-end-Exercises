@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+}
+#upper{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#side-left{
+    background-color: gray;
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    flex-direction: column;
+}
+#main{
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 100px;
+
+}
