@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Positioning Items</title>
+    <meta charset="UTF-8">
+    <style>
+
+        /*////////////////////
+        // Positioning items
+        //////////////////////
+
+        Reset *
+        Display: inline vs block
+        https://www.w3schools.com/cssref/pr_class_display.asp
+
+        Box-sizing
+        https://www.w3schools.com/css/css3_box-sizing.asp
+
+        Using percentages and max-width
+        https://www.w3schools.com/cssref/css_units.asp
+
+        Float and clear
+        https://www.w3schools.com/cssref/pr_class_float.asp
+
+        Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+
+        Absolute/Relative positioning
+        https://www.w3schools.com/cssref/pr_class_position.asp
+
+        Centering
+        https://www.w3schools.com/css/css_align.asp
+
+        */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+
+        }
+
+        .clear { clear: both;}
+
+        /* img */
+        img {
+        }
+
+        /* container */
+        .container {
+            position: relative;
+            display: flex;
+            background-color: darkolivegreen;
+            height: 100vh;
+        }
+
+        .box {
+            border: 1px solid black;
+        }
+
+        #left {
+            background-color: white;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #right {
+            background-color: gray;
+            flex: 1;
+            display: flex;
+            /*justify-content: center;*/
+            /*align-items: center;*/
+            flex-direction: column;
+        }
+        .card{
+            background-color: aqua;
+            width: 200px;
+            height: 240px;
+        }
+        .upper{
+            background-color: gray;
+            height: 200px;
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .lower{
+            background-color: gray;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .more{
+            position: absolute;
+            transform: translate(-50%, -25%);
+            left: 50%;
+            bottom: 0;
+            width: 50px;
+            height: 30px;
+            background-color: blueviolet;
+            color: aliceblue;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <div class="box" id="left">
+        <div class="card">
+            KORTTI
+        </div>
+    </div>
+    <div class="box" id="right">
+        <div class="upper">
+           <h3>OTSIKKO</h3>
+        </div>
+        <div class="lower">
+            <ol>
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Esse quia ut labore, nesciunt iure deleniti alias rerum amet natus, dolore consectetur repudiandae veniam sequi exercitationem voluptate?
+                    Error voluptatem reiciendis officiis.
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Velit praesentium enim molestiae tempore laboriosam reiciendis unde fugit voluptas eligendi,
+                    maiores molestias cumque adipisci provident beatae alias accusantium maxime! Sunt, iure.
+                </li>
+
+                <li>
+                    <form>
+                        <input type="text" id="input" name="input" value="Input field">
+                    </form>
+                </li>
+
+                <li>
+                    <button class="button" type="button">Click Me!</button>
+                </li>
+
+                <li>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Officia fuga eligendi distinctio sunt amet accusantium aperiam aliquid dolores,
+                    corporis nostrum quibusdam totam reprehenderit perferendis enim vitae veniam fugit eaque tempora?
+                </li>
+            </ol>
+        </div>
+    </div>
+    <div class="more">MORE</div>
+</div>
+<!-- Float continues, clearing -->
+
+<h1>Heading 1</h1><h1>Heading 2</h1>
+
+<!-- Responsive images and centering -->
+
+</body>
+</html>

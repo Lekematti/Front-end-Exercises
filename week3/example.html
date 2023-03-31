@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Positioning Items</title>
+  <meta charset="UTF-8">
+  <style>
+
+    /*////////////////////
+    // Positioning items
+    //////////////////////
+
+    Reset *
+    Display: inline vs block
+    https://www.w3schools.com/cssref/pr_class_display.asp
+
+    Box-sizing
+    https://www.w3schools.com/css/css3_box-sizing.asp
+
+    Using percentages and max-width
+    https://www.w3schools.com/cssref/css_units.asp
+
+    Float and clear
+    https://www.w3schools.com/cssref/pr_class_float.asp
+
+    Flexbox - https://www.w3schools.com/css/css3_flexbox.asp
+
+    Absolute/Relative positioning
+    https://www.w3schools.com/cssref/pr_class_position.asp
+
+    Centering
+    https://www.w3schools.com/css/css_align.asp
+
+    */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+
+
+    .clear { clear: both;}
+
+    /* img */
+    img {
+    }
+
+    /* container */
+    .container {
+      display: flex;
+      /*flex-wrap: wrap;*/
+      flex-direction: row;
+      /*align-items: center;*/
+      /*align-content: center;*/
+      /*justify-content: center;*/
+      background-color: darkolivegreen;
+      height: 100vh;
+    }
+
+    .box {
+      height: 100px;
+      width: 300px;
+      border: 1px solid black;
+      color: aliceblue;
+    }
+
+    #red {
+      background-color: red;
+      /*order: 5;*/
+      /*flex: 1;*/
+      width: 300px;
+    }
+    #green {
+      background-color: green;
+      font-size: 30px;
+      /*order: 4;*/
+      /*flex: 1;*/
+      flex-basis: 300px;
+      flex-grow: 0;
+      flex-shrink: 1;
+    }
+    #blue {
+      background-color: blue;
+      /*order: 3;*/
+      flex: 1;
+    }
+    #yellow {
+      background-color: yellow; color: black;
+      /*order: 1;*/
+      flex: 1;
+    }
+    #orange {
+      background-color: orange;
+      /*order: 2;*/
+      flex: 1;
+    }
+
+
+    /* relative and absolute positioning with blue */
+    #blue {
+    }
+
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <div class="box" id="red">Box 1</div>
+  <div class="box" id="green">Box 2</div>
+  <div class="box" id="blue">Box 3</div>
+  <div class="box" id="yellow">Box 4</div>
+  <div class="box" id="orange">Box 5</div>
+</div>
+<!-- Float continues, clearing -->
+
+<h1>Heading 1</h1><h1>Heading 2</h1>
+
+<!-- Responsive images and centering -->
+
+</body>
+</html>
