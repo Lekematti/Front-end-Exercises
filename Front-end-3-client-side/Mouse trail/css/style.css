@@ -1,0 +1,16 @@
+.trail { /* className for the trail elements */
+    position: absolute;
+    height: 6px; width: 6px;
+    border-radius: 3px;
+    background: teal;
+}
+body {
+    height: 200px;
+    background: beige;
+}
+.dot {
+    height: 8px; width: 8px;
+    border-radius: 4px; /* rounds corners */
+    background: blue;
+    position: absolute;
+}
