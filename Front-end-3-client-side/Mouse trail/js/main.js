@@ -1,7 +1,16 @@
-window.addEventListener("click", event => {
-    let dot = document.createElement("div");
-    dot.className = "dot";
-    dot.style.left = (event.pageX - 4) + "px";
-    dot.style.top = (event.pageY - 4) + "px";
-    document.body.appendChild(dot);
+const dot = 1;
+const trailElements = [];
+for (let i = 0; i < dot; i++) {
+    const trail = document.createElement('div');
+    trail.className = 'trail';
+    trailElements.push(trail);
+    document.body.appendChild(trail);
+}
+
+let currentTrailIndex = 0;
+document.addEventListener('mousemove', (event) => {
+    const currentTrail = trailElements[currentTrailIndex];
+    currentTrail.style.left = event.pageX + 'px';
+    currentTrail.style.top = event.pageY + 'px';
+    currentTrailIndex = (currentTrailIndex + 1) % dot;
 });

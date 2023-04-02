@@ -1,0 +1,20 @@
+.tab-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.tab-list button {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+.tab-list button:hover,
+.active-tab {
+    background: #eee;
+}
+.active-tab {
+    color: teal;
+}

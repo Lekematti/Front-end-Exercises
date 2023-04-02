@@ -8,9 +8,10 @@ body {
     height: 200px;
     background: beige;
 }
-.dot {
-    height: 8px; width: 8px;
-    border-radius: 4px; /* rounds corners */
-    background: blue;
+.trail {
     position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background-color: teal;
 }
