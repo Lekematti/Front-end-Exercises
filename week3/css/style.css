@@ -3,7 +3,7 @@
 }
 body {
     margin: 0;
-    background-image: url("../img/meme3.jpeg");
+    background-image: url("../img/OColor3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -37,7 +37,9 @@ body {
     width: 100%;
     height: 50%;
     background-position: center;
-    background-image: url("../img/MEME109.jpg");
+    background-image: url("../img/MEME81.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 26% 52%);
 }
 .lower{
@@ -69,7 +71,7 @@ body {
 .nav a{
     padding: 12px 15px;
     font-size: 15px;
-    color: darkorchid;
+    color: #722a9f;
 }
 .nav a:hover{
     background-color: black;
@@ -80,10 +82,10 @@ footer{
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: gray;
+    background-color: lightblue;
 }
 .wrapper{
-    background-color: darkolivegreen;
+    background-color: #2c8130;
     max-width: 900px;
     margin: 50px auto 50px auto;
     padding: 20px;
