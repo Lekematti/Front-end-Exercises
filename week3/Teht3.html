@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Positioning Items</title>
     <meta charset="UTF-8">
     <style>
@@ -62,12 +64,24 @@
             background-color: white;
         }
 
-        nav{
+        .nav{
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
-            flex-direction: row;
             margin-bottom: 10px;
+        }
+        .left{
+            display: flex;
+            align-items: center;
+        }
+        .nav a{
+            padding: 12px 15px;
+            font-size: 15px;
+
+        }
+        .nav a:hover{
+            background-color: white;
+            color: black;
         }
         footer{
             display: flex;
@@ -87,6 +101,7 @@
         h2{
             font-weight: bold;
         }
+
         @media screen and (max-width: 800px){
             .wrapper{
                 background-color: black;
@@ -101,27 +116,22 @@
 
 <body>
 <div class="wrapper">
-    <header>
-        <nav>
-            navi palkki
+        <div class="nav">
+            <div class="left">
+                <a href="#Home"><i class="fa fa-fw fa-home"></i>  Home</a>
+                <a href="#Dogs"><i class='fas fa-dog'></i>  Dogs</a>
+            </div>
             <button>Login</button>
-        </nav>
-    </header>
+        </div>
 
     <div class="main">
         <div class="box" id="left">
             <div>
                 <h2>Recent posts</h2>
                 <ul>
-                    <li>
-                        tekstiä
-                    </li>
-                    <li>
-                        tekstiä
-                    </li>
-                    <li>
-                        tekstiä
-                    </li>
+                    <p>Jotain tekstiä</p>
+                    <p>Lisää tekstiä</p>
+                    <p>Vielä enemmän tekstiä</p>
                 </ul>
             </div>
         </div>
