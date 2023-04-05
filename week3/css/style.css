@@ -1,32 +1,106 @@
 * {
     box-sizing: border-box;
 }
-
 body {
     margin: 0;
-
+    background-image: url("../img/meme3.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-#upper{
+/* container */
+.main {
+    position: relative;
+    display: flex;
+    background-color: darkolivegreen;
+    height: 100vh;
+}
+#left {
+    background-color: azure;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    padding-top: 20px;
+}
+#right {
     background-color: white;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+}
+.upper{
+    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 50%;
+    background-position: center;
+    background-image: url("../img/MEME109.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 26% 52%);
 }
-#side-left{
-    background-color: gray;
+.lower{
+    flex: 1;
+    background-color: white;
+}
+.nav{
     display: flex;
-    /*justify-content: center;*/
-    /*align-items: center;*/
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-right: 10px;
+    background-color: azure;
 }
-#main{
-
+.left{
+    display: flex;
+    align-items: center;
+    font-family: "Brush Script MT";
+    font-weight: bold;
+}
+.login{
+    background-color: azure;
+    color: black;
+}
+.login:hover{
+    background-color: black;
+    color: white;
+}
+.nav a{
+    padding: 12px 15px;
+    font-size: 15px;
+    color: darkorchid;
+}
+.nav a:hover{
+    background-color: black;
+    color: white;
 }
 footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgrey;
     height: 100px;
+    background-color: gray;
+}
+.wrapper{
+    background-color: darkolivegreen;
+    max-width: 900px;
+    margin: 50px auto 50px auto;
+    padding: 20px;
+}
+h2{
+    font-weight: bold;
+    text-align: center;
+}
+.mainText{
+    font-family: Papyrus;
+}
 
+@media screen and (max-width: 800px){
+    .wrapper{
+        background-color: black;
+    }
+    #left{
+        flex-direction: column-reverse;
+    }
 }

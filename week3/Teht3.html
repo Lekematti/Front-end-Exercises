@@ -1,117 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E"/>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Positioning Items</title>
     <meta charset="UTF-8">
-    <style>
 
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            margin: 0;
-            background-image: url("../img/meme3.jpeg");
-        }
-
-        .clear { clear: both;}
-
-        /* img */
-        img {
-        }
-
-        /* container */
-        .main {
-            position: relative;
-            display: flex;
-            background-color: darkolivegreen;
-            height: 100vh;
-        }
-
-
-        #left {
-            background-color: azure;
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: self-start;
-            padding-top: 20px;
-        }
-        #right {
-            background-color: white;
-            flex: 2;
-            display: flex;
-            flex-direction: column;
-            padding-left: 15px;
-        }
-
-        .upper{
-            background-color: black;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 50%;
-            background-position: center;
-            background-image: url("../img/MEME109.jpg");
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 26% 52%);
-
-        }
-        .lower{
-            flex: 1;
-            background-color: white;
-        }
-
-        .nav{
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-        .left{
-            display: flex;
-            align-items: center;
-        }
-        .nav a{
-            padding: 12px 15px;
-            font-size: 15px;
-
-        }
-        .nav a:hover{
-            background-color: white;
-            color: black;
-        }
-        footer{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100px;
-            background-color: gray;
-        }
-        .wrapper{
-            background-color: darkolivegreen;
-            max-width: 900px;
-            margin: auto;
-            margin-top: 50px;
-            margin-bottom: 50px;
-            padding: 20px;
-        }
-        h2{
-            font-weight: bold;
-        }
-
-        @media screen and (max-width: 800px){
-            .wrapper{
-                background-color: black;
-            }
-            #left{
-                flex-direction: column-reverse;
-
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -121,7 +16,7 @@
                 <a href="#Home"><i class="fa fa-fw fa-home"></i>  Home</a>
                 <a href="#Dogs"><i class='fas fa-dog'></i>  Dogs</a>
             </div>
-            <button>Login</button>
+            <button class="login">Login</button>
         </div>
 
     <div class="main">
@@ -140,8 +35,8 @@
 
             </div>
             <div class="lower">
-                <h3>cool image</h3>
-                <p>
+                <h3>Cool image</h3>
+                <p class="mainText">
                     <span>Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit.
                     Adipisci animi aperiam dicta doloribus eum
@@ -154,7 +49,7 @@
         </div>
     </div>
     <footer>
-        Täällä sivun pohja
+        Täällä on sivun pohja.
     </footer>
 </div>
 </body>
