@@ -55,7 +55,7 @@ body {
 .left{
     display: flex;
     align-items: center;
-    font-family: "Brush Script MT";
+    font-family: Algerian;
     font-weight: bold;
 }
 .login{
